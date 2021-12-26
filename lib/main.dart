@@ -1,3 +1,4 @@
+import 'package:criandowidgets/custom-circle-avatar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,7 +33,7 @@ class HomeWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          RaisedButton(
+          /*RaisedButton(
             
             onPressed: () {
               print("RAISEDBUTTON");
@@ -45,7 +46,17 @@ class HomeWidget extends StatelessWidget {
                 print("RAISEDBUTTON ICON");
               },
               icon: Icon(Icons.android),
-              label: Text("Click Button"))
+              label: Text("Click Button"))*/
+          CircleAvatar(
+            backgroundColor: Colors.blue,
+            child: Text("G"),
+          ),
+          SizedBox(
+            height: 50,
+          ),
+          CustomCircleAvatar(
+            backgroundColor: Colors.blue,
+          ),
         ],
       ),
     );
